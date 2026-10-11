@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cestalia · Privacy policy</title>
+  <style>
+    :root { --bg: #f7f7f5; --panel: #fff; --text: #1d1d1b; --quiet: #66665f; --line: #deded8; --accent: #1f6f4a; }
+    @media (prefers-color-scheme: dark) { :root { --bg: #161615; --panel: #1f1f1d; --text: #ecece8; --quiet: #a5a59d; --line: #34342f; --accent: #5cc493; } }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, "Segoe UI", sans-serif; }
+    main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+    h1 { font-size: 28px; margin: 0 0 4px; } h2 { font-size: 19px; margin: 28px 0 8px; }
+    .fecha { color: var(--quiet); margin: 0 0 24px; }
+    table { width: 100%; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); font-size: 14px; }
+    th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    a { color: var(--accent); }
+    code { font-size: 14px; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Cestalia privacy policy</h1>
+  <p class="fecha">Last updated: 11 October 2026 · Extension version: 0.9.6</p>
+
+  <p>Cestalia is a Chrome extension that compares your shopping list across supermarkets' online shops and helps you fill the basket on their websites. This policy explains what data it handles, where it is stored and what control you have.</p>
+
+  <h2>1. Controller</h2>
+  <p>Controller: <b>Eurodigitech SL</b>. Privacy contact: <b><a href="mailto:admin@eurodigitech.es">admin@eurodigitech.es</a></b>.</p>
+
+  <h2>2. Data stored only on your computer</h2>
+  <p>Everything the extension needs to work is stored in Chrome's local storage on your device (<code>chrome.storage.local</code>) and is <b>not sent to any Cestalia server</b>:</p>
+  <ul>
+    <li>Your shopping list, saved lists and per-product preferences.</li>
+    <li>Your postal code and chosen supermarkets.</li>
+    <li>The latest comparison and your product choices («¿No es este?»).</li>
+    <li>Settings (tips seen, maximum number of supermarkets, analytics consent) and a cache of Mercadona's public catalogue and of postal-code coverage.</li>
+  </ul>
+  <p>After a comparison or a basket fill, the extension also saves a copy of the result (with your list and the chosen products) as a file in your <b>Downloads\cestalia</b> folder so you can review it. It is a local file on your computer and is not sent anywhere.</p>
+  <p>You can delete everything by uninstalling the extension or from Chrome's settings.</p>
+
+  <h2>3. Supermarket websites</h2>
+  <p>To compare prices, the extension queries the public websites of the supermarkets you choose, as you would yourself: its searches include the <b>names of the products on your list</b>, and Mercadona receives your <b>postal code</b> to determine your store. Condis's search is provided by its search vendor (Empathy, api.empathy.co), which receives the same searches.</p>
+  <p>To fill the basket, the extension works in those websites' tabs <b>using your own session</b>. Cestalia does not see, store or send your passwords, never types credentials, does not solve captchas, does not choose a delivery slot, does not confirm orders and never pays. What you do on each website is governed by that supermarket's privacy policy.</p>
+
+  <h2>4. Anonymous usage analytics (optional)</h2>
+  <p>Only if you accept (notice in the extension or ⚙ Settings; off by default), Cestalia sends anonymous analytics to improve the product: which buttons and steps are used, how long comparing takes, whether basket filling works, and errors. They are sent to <b>PostHog</b> (PostHog Inc., servers in the European Union, Frankfurt), acting as data processor.</p>
+  <table>
+    <tr><th>Sent (if you accept)</th><th>Never sent</th></tr>
+    <tr><td>Usage events (e.g. «comparison started», «Carrefour basket filled: 40 added, 2 substituted»), extension version, province (first 2 digits of the postal code) and a random identifier that does not identify you.</td>
+        <td>What you type, product or list names, your full postal code, your name, email, address, supermarket account data, passwords, cookies or payment data.</td></tr>
+  </table>
+  <p>Legal basis: your consent, which you can withdraw at any time in ⚙ Settings → Privacy. «Borrar mis datos de uso» deletes the analytics stored on your device and creates a new identifier. The full list of events is available on request at admin@eurodigitech.es.</p>
+
+  <h2>5. Limited use</h2>
+  <p>Data is used only to provide and improve the Cestalia features described above. It is not sold, not transferred to third parties (except the analytics provider above, only if you accept), not used for advertising or creditworthiness, and not used for purposes unrelated to the extension's single purpose.</p>
+
+  <h2>6. Retention</h2>
+  <p>Local data is kept until you delete it or uninstall the extension. Anonymous analytics are kept in PostHog for the project's retention period (at most 12 months).</p>
+
+  <h2>7. Your rights</h2>
+  <p>You can access, correct or delete your local data from the extension itself, and withdraw analytics consent at any time. For any request about analytics, write to <b><a href="mailto:admin@eurodigitech.es">admin@eurodigitech.es</a></b>. You can also complain to the Spanish Data Protection Agency (<a href="https://www.aepd.es">www.aepd.es</a>).</p>
+
+  <h2>8. Children</h2>
+  <p>Cestalia is not directed at children under 14.</p>
+
+  <h2>9. Changes</h2>
+  <p>If this policy changes, this page and the date above will be updated. Significant changes will be announced in the extension.</p>
+
+  <h2>10. Notice</h2>
+  <p>Prices and information are indicative and not binding. Cestalia is not affiliated with, sponsored or endorsed by any supermarket; their names and trademarks belong to their owners.</p>
+  <p><a href="privacidad.html">Versión en español</a></p>
+</main>
+</body>
+</html>
